@@ -4,13 +4,11 @@
     box-sizing: border-box;
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
-
 /* ---------- PAGE ---------- */
 .page {
     background: #f5f7fa;
     color: #222;
 }
-
 /* ---------- TOP BAR ---------- */
 .topbar {
     padding: 10px 20px;
@@ -21,3 +19,4 @@
 .topbar a {
     color: #0066cc;
     text-decoration: none;
+}
