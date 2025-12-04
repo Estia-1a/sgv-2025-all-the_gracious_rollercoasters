@@ -84,6 +84,8 @@ nav a:hover {
     max-width: 900px;
     margin: 60px auto;
     padding: 0 20px;
+    padding-bottom: 40px;
+
 }
 
 .actu-container h1 {
@@ -91,6 +93,8 @@ nav a:hover {
     font-size: 2.2em;
     margin-bottom: 40px;
     color: #003366;
+    margin-top: 20px;
+
 }
 
 /* Carte */
@@ -104,6 +108,9 @@ nav a:hover {
     .actu-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 14px rgba(0,0,0,0.12);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 }
@@ -137,6 +144,12 @@ nav a:hover {
 .btn-actu:hover {
     background-color: #0055aa;
 }
+.actu-card hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
 .date, .source {
     display: block;
     font-size: 0.8em;
