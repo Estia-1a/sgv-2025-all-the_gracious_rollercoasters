@@ -100,6 +100,12 @@ nav a:hover {
     margin-bottom: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    .actu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 14px rgba(0,0,0,0.12);
+}
+
 }
 
 /* Titre d'actualité */
@@ -130,4 +136,8 @@ nav a:hover {
 
 .btn-actu:hover {
     background-color: #0055aa;
+}
+.date, .source {
+    font-size: 0.8em;
+    color: #666;
 }
