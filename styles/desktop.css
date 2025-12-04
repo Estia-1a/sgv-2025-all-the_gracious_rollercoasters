@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Style général */
 body {
     margin: 0;
@@ -72,4 +73,8 @@ nav a:hover {
 
 .btn-hero:hover {
     background-color: #e6e6e6;
+=======
+body {
+    background-color: blue;
+>>>>>>> origin/main
 }
