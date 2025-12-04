@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* ---- HEADER ---- */
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #003366;
+    color: white;
+}
+
+/* ---- LOGO ---- */
+.logo {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-right: 60px; 
+}
+
+/* ---- MENU NAVIGATION ---- */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* espace*
