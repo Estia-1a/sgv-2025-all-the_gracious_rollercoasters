@@ -77,6 +77,10 @@ nav a:hover {
 /* ACTUALITÉS */
 
 .actu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+
     max-width: 900px;
     margin: 60px auto;
     padding: 0 20px;
