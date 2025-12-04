@@ -37,3 +37,43 @@
     </header>
     <main class="main">
         <div class="main-layout">
+            <aside class="filters" aria-label="Filtres des cours">
+                <h2>Filtrer les cours</h2>
+
+                <!-- Groupe : statut du cours -->
+                <div class="filter-group">
+                    <div class="filter-group-title">Statut du cours</div>
+
+                    <label class="filter-option">
+                        <input type="checkbox" name="statut-en-cours">
+                        <span>En cours</span>
+                        <span class="filter-count"></span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input type="checkbox" name="statut-non-debute">
+                        <span>Non débuté</span>
+                        <span class="filter-count"></span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input type="checkbox" name="statut-termine">
+                        <span>Terminé</span>
+                        <span class="filter-count"></span>
+                    </label>
+                </div>
+                 <div class="filter-group">
+     <div class="filter-title">Matière</div>
+    <label class="filter-option">
+      <input type="checkbox" name="matiere" value="maths">
+      Mathématiques 
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="matiere" value="physique">
+      Physique 
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="matiere" value="informatique">
+      Informatique 
+    </label>
+  </div>
