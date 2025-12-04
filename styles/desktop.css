@@ -39,7 +39,10 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-
+.btn-hero:hover {
+    background-color: #e6e6e6;
+}
+/* HERO SECTION (section d'accueil) */
 .hero {
     text-align: center;
     padding: 120px 20px;
