@@ -156,3 +156,12 @@ nav a:hover {
     color: #666;
     margin-bottom: 5px;
 }
+/*IMAGES ACTUALITÉS*/
+
+.actu-card img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
