@@ -5,7 +5,7 @@ body {
     background-color: #f4f6f9;
 }
 
-/* ---- HEADER ---- */
+/*  HEADER */
 header {
     display: flex;
     justify-content: space-between; 
@@ -17,13 +17,13 @@ header {
     top: 0;
 }
 
-/* ---- LOGO ---- */
+/*LOGO */
 .logo {
     font-size: 1.6em;
     font-weight: bold;
 }
 
-/* ---- MENU NAVIGATION ---- */
+/*MENU NAVIGATION*/
 nav ul {
     list-style: none;
     display: flex;
@@ -42,7 +42,7 @@ nav a:hover {
 .btn-hero:hover {
     background-color: #e6e6e6;
 }
-/* (section d'accueil) */
+/* section d'accueil */
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -73,4 +73,57 @@ nav a:hover {
 
 .btn-hero:hover {
     background-color: #e6e6e6;
+}
+/* ACTUALITÉS */
+
+.actu-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.actu-container h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+/* Carte */
+.actu-card {
+    background-color: white;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Titre d'actualité */
+.actu-card h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #004a99;
+}
+
+/* Texte */
+.actu-card p {
+    font-size: 1em;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+/* Bouton */
+.btn-actu {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #003366;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.btn-actu:hover {
+    background-color: #0055aa;
 }
