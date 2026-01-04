@@ -1,39 +1,297 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Cours en ligne – Plateforme Bidart</title>
-    <link rel="stylesheet" href="style-cours.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cours en ligne – Plateforme Bidart</title>
+  <link rel="stylesheet" href="styles/mescours.css">
 </head>
 
 <body>
-<div class="page">
+  <div class="page">
 
-    
+    <!-- Fil d'ariane / topbar -->
     <div class="topbar">
-        Vous êtes ici :
-        <a href="#">Accueil</a>
-        <span> &gt; Cours en ligne</span>
+      <a href="#">Accueil</a>
+      <span> &gt; Cours en ligne</span>
     </div>
 
-        <header class="hero">
-        <div class="hero-inner">
-            <div class="hero-title">
-                <h1>Suivre mes cours<br> en ligne</h1>
-            </div>
-
-            <div class="hero-search">
-                <form class="hero-search-form">
-                    <input
-                        type="search"
-                        class="hero-search-input"
-                        placeholder="Rechercher un cours (C, méca, élec, automatisme...)">
-                    <button type="submit" class="hero-search-button" aria-label="Rechercher">
-                        &#128269;
-                    </button>
-                </form>
-            </div>
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-title">
+          <h1>Suivre mes cours<br>en ligne</h1>
         </div>
+
+        <div class="hero-search">
+          <form class="hero-search-form" action="#" method="get">
+            <input
+              type="search"
+              class="hero-search-input"
+              name="q"
+              placeholder="Rechercher un cours (C, méca, élec...)"
+              aria-label="Rechercher un cours"
+            />
+            <button type="submit" class="hero-search-button" aria-label="Rechercher">🔍</button>
+          </form>
+        </div>
+      </div>
     </header>
+
+    <!-- Contenu principal -->
     <main class="main">
-        <div class="main-layout">
+      <div class="main-layout">
+
+        <!-- FILTRES (gauche) -->
+        <aside class="filters" aria-label="Filtres des cours">
+          <h2>Filtrer les cours</h2>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Statut du cours</div>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-statut" value="en-cours">
+              <span>En cours</span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-statut" value="non-debute">
+              <span>Non débuté</span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-statut" value="termine">
+              <span>Terminé</span>
+            </label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Matières</div>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-matiere" value="mathematique">
+              <span>Mathématique</span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-matiere" value="electronique">
+              <span>Électronique</span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-matiere" value="mecanique">
+              <span>Mécanique</span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-matiere" value="programmation">
+              <span>Programmation</span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-matiere" value="physique">
+              <span>Physique</span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" class="filter-matiere" value="science-materiaux">
+              <span>Science des matériaux</span>
+            </label>
+          </div>
+        </aside>
+
+        <!-- CARTES (milieu/droite) -->
+        <section class="results" aria-label="Liste des cours">
+          <div class="courses-header">
+            6 cours affichés
+          </div>
+
+          <!-- IMPORTANT : conteneur de grille -->
+          <div class="courses-grid">
+
+            <!-- Électronique -->
+            <article class="course-card" data-matiere="electronique" data-statut="en-cours">
+              <div class="course-image" style="background-image: url('media/pictures/electronique.jpg');"></div>
+
+              <div class="course-body">
+                <h3 class="course-title">Électronique</h3>
+
+                <div class="course-meta">
+                  <div>Niveau : Débutant</div>
+                  <div>Durée estimée : 15 h</div>
+                </div>
+
+                <div class="course-progress">
+                  <div class="course-progress-label">Progression : 40%</div>
+                  <div class="course-progress-bar">
+                    <div class="course-progress-fill" style="width: 40%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <span class="status-badge">En cours</span>
+              </div>
+            </article>
+
+            <!-- Physique -->
+            <article class="course-card" data-matiere="physique" data-statut="en-cours">
+              <div class="course-image" style="background-image: url('media/pictures/physique.JPG');"></div>
+
+              <div class="course-body">
+                <h3 class="course-title">Physique</h3>
+
+                <div class="course-meta">
+                  <div>Niveau : Débutant</div>
+                  <div>Durée estimée : 5 h</div>
+                </div>
+
+                <div class="course-progress">
+                  <div class="course-progress-label">Progression : 10%</div>
+                  <div class="course-progress-bar">
+                    <div class="course-progress-fill" style="width: 10%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <span class="status-badge">En cours</span>
+              </div>
+            </article>
+
+            <!-- Science des matériaux -->
+            <article class="course-card" data-matiere="science-materiaux" data-statut="non-debute">
+              <!-- Mets une vraie image, sinon mets un placeholder local -->
+              <div class="course-image" style="background-image: url('media/pictures/sciencedesmateriaux.jpg');"></div>
+
+              <div class="course-body">
+                <h3 class="course-title">Science des matériaux</h3>
+
+                <div class="course-meta">
+                  <div>Niveau : Débutant</div>
+                  <div>Durée estimée : 10 h</div>
+                </div>
+
+                <div class="course-progress">
+                  <div class="course-progress-label">Progression : 0%</div>
+                  <div class="course-progress-bar">
+                    <div class="course-progress-fill" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <span class="status-badge">Non débuté</span>
+              </div>
+            </article>
+
+            <!-- Programmation -->
+            <article class="course-card" data-matiere="programmation" data-statut="termine">
+              <div class="course-image" style="background-image: url('media/pictures/Programtion.JPG');"></div>
+
+              <div class="course-body">
+                <h3 class="course-title">Programmation</h3>
+
+                <div class="course-meta">
+                  <div>Niveau : Débutant</div>
+                  <div>Durée estimée : 7 h</div>
+                </div>
+
+                <div class="course-progress">
+                  <div class="course-progress-label">Progression : 100%</div>
+                  <div class="course-progress-bar">
+                    <div class="course-progress-fill" style="width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <span class="status-badge">Terminé</span>
+              </div>
+            </article>
+
+            <!-- Mécanique -->
+            <article class="course-card" data-matiere="mecanique" data-statut="en-cours">
+              <div class="course-image" style="background-image: url('media/pictures/mecanique.JPG');"></div>
+
+              <div class="course-body">
+                <h3 class="course-title">Mécanique</h3>
+
+                <div class="course-meta">
+                  <div>Niveau : Débutant</div>
+                  <div>Durée estimée : 7 h</div>
+                </div>
+
+                <div class="course-progress">
+                  <div class="course-progress-label">Progression : 35%</div>
+                  <div class="course-progress-bar">
+                    <div class="course-progress-fill" style="width: 35%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <span class="status-badge">En cours</span>
+              </div>
+            </article>
+
+            <!-- Maths -->
+            <article class="course-card" data-matiere="mathematique" data-statut="en-cours">
+              <!-- ✅ ton guillemet était cassé : corrigé -->
+              <div class="course-image" style="background-image: url('media/pictures/mathematique.JPG');"></div>
+
+              <div class="course-body">
+                <h3 class="course-title">Mathématiques</h3>
+
+                <div class="course-meta">
+                  <div>Niveau : Débutant</div>
+                  <div>Durée estimée : 7 h</div>
+                </div>
+
+                <div class="course-progress">
+                  <div class="course-progress-label">Progression : 15%</div>
+                  <div class="course-progress-bar">
+                    <div class="course-progress-fill" style="width: 15%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <span class="status-badge">En cours</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- FILTRAGE (matière + statut) -->
+  <script>
+    const matieres = document.querySelectorAll('.filter-matiere');
+    const statuts = document.querySelectorAll('.filter-statut');
+    const cards = document.querySelectorAll('.course-card');
+
+    function appliquerFiltres() {
+      const matSel = Array.from(matieres).filter(c => c.checked).map(c => c.value);
+      const staSel = Array.from(statuts).filter(c => c.checked).map(c => c.value);
+
+      cards.forEach(card => {
+        const m = card.getAttribute('data-matiere');
+        const s = card.getAttribute('data-statut');
+
+        const okM = (matSel.length === 0) || matSel.includes(m);
+        const okS = (staSel.length === 0) || staSel.includes(s);
+
+        card.style.display = (okM && okS) ? "" : "none";
+      });
+    }
+
+    matieres.forEach(cb => cb.addEventListener('change', appliquerFiltres));
+    statuts.forEach(cb => cb.addEventListener('change', appliquerFiltres));
+  </script>
+</body>
+</html>
