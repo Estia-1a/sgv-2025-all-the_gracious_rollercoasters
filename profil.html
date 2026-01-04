@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil — ESTIA Learning</title>
+  <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">ESTIA Learning</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="actu.html">Actualités</a></li>
+        <li><a href="etablissement.html">Établissement</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="mes-cours.html">Mes Cours</a></li>
+        <li><a class="active" href="profil.html">Profil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Mon profil</h1>
+      <p>Gère tes informations, ta progression et tes préférences.</p>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="layout">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="profile-card">
+          <div class="avatar" aria-hidden="true">JD</div>
+          <div class="profile-meta">
+            <h2>Hugo Mandart</h2>
+            <p class="muted">Étudiant • ESTIA Bidart</p>
+            <div class="chips">
+              <span class="chip">L3</span>
+              <span class="chip">Alternance</span>
+              <span class="chip">Airbus</span>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <a class="btn btn-primary" href="#infos">Modifier le profil</a>
+            <a class="btn btn-ghost" href="#securite">Sécurité</a>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <h3>Navigation</h3>
+          <a class="menu-item" href="#infos">Informations</a>
+          <a class="menu-item" href="#stats">Statistiques</a>
+          <a class="menu-item" href="#progression">Progression</a>
+          <a class="menu-item" href="#preferences">Préférences</a>
+          <a class="menu-item" href="#securite">Sécurité</a>
+        </div>
+      </aside>
+
+      <!-- CONTENT -->
+      <section class="content">
+        <h2 class="visually-hidden">Contenu du profil</h2>
+
+        <!-- STATS -->
+        <section id="stats" class="grid-3">
+          <h2 class="visually-hidden">Statistiques</h2>
+
+          <article class="stat-card">
+            <h3 class="visually-hidden">Cours suivis</h3>
+            <div class="stat-top">
+              <span class="stat-label">Cours suivis</span>
+              <span class="badge">Total</span>
+            </div>
+            <div class="stat-value">12</div>
+            <p class="muted">Dont 3 en cours</p>
+          </article>
+
+          <article class="stat-card">
+            <h3 class="visually-hidden">Heures apprises</h3>
+            <div class="stat-top">
+              <span class="stat-label">Heures apprises</span>
+              <span class="badge badge-blue">Cette semaine</span>
+            </div>
+            <div class="stat-value">6h 40</div>
+            <p class="muted">Objectif : 8h</p>
+          </article>
+
+          <article class="stat-card">
+            <h3 class="visually-hidden">Badges</h3>
+            <div class="stat-top">
+              <span class="stat-label">Badges</span>
+              <span class="badge badge-green">Nouveau</span>
+            </div>
+            <div class="stat-value">5</div>
+            <p class="muted">Continue comme ça !</p>
+          </article>
+        </section>
+
+        <!-- INFOS -->
+        <section id="infos" class="panel">
+          <div class="panel-head">
+            <h3>Informations personnelles</h3>
+            <button class="btn btn-primary" type="button">Enregistrer</button>
+          </div>
+
+          <form class="form">
+            <div class="form-row">
+              <div class="field">
+                <label for="prenom">Prénom</label>
+                <input id="prenom" type="text" value="Jean" autocomplete="given-name">
+              </div>
+              <div class="field">
+                <label for="nom">Nom</label>
+                <input id="nom" type="text" value="Dupont" autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" value="jean.dupont@estia.fr" autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="promo">Promotion</label>
+                <input id="promo" type="text" value="Ingénieur Généraliste — L3">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="campus">Campus</label>
+                <input id="campus" type="text" value="Bidart">
+              </div>
+              <div class="field">
+                <label for="entreprise">Entreprise</label>
+                <input id="entreprise" type="text" value="Airbus">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="bio">Bio</label>
+              <textarea id="bio" rows="4" placeholder="Parle un peu de toi…">Passionné par l’aéro et l’ingénierie, j’avance sur la méca et l’élec cette année.</textarea>
+              <p class="help">Conseil : 1–2 phrases, ce que tu apprends en ce moment, tes objectifs.</p>
+            </div>
+          </form>
+        </section>
+
+        <!-- PROGRESSION -->
+        <section id="progression" class="panel">
+          <div class="panel-head">
+            <h3>Progression récente</h3>
+            <a class="btn btn-ghost" href="mes-cours.html">Voir mes cours</a>
+          </div>
+
+          <div class="list">
+            <article class="course-row">
+              <div class="course-left">
+                <div class="course-thumb" aria-hidden="true">Élec</div>
+                <div>
+                  <h4>Électronique</h4>
+                  <p class="muted">Dernière activité : hier</p>
+                </div>
+              </div>
+              <div class="course-right">
+                <div class="progress">
+                  <div class="bar" style="width: 40%"></div>
+                </div>
+                <span class="percent">40%</span>
+              </div>
+            </article>
+
+            <article class="course-row">
+              <div class="course-left">
+                <div class="course-thumb course-thumb-2" aria-hidden="true">Phy</div>
+                <div>
+                  <h4>Physique</h4>
+                  <p class="muted">Dernière activité : il y a 3 jours</p>
+                </div>
+              </div>
+              <div class="course-right">
+                <div class="progress">
+                  <div class="bar" style="width: 10%"></div>
+                </div>
+                <span class="percent">10%</span>
+              </div>
+            </article>
+
+            <article class="course-row">
+              <div class="course-left">
+                <div class="course-thumb course-thumb-3" aria-hidden="true">Prog</div>
+                <div>
+                  <h4>Programmation</h4>
+                  <p class="muted">Terminé • Score quiz : 86%</p>
+                </div>
+              </div>
+              <div class="course-right">
+                <div class="progress">
+                  <div class="bar" style="width: 100%"></div>
+                </div>
+                <span class="percent">100%</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- PREFERENCES -->
+        <section id="preferences" class="panel">
+          <div class="panel-head">
+            <h3>Préférences</h3>
+            <span class="muted">Notifications & interface</span>
+          </div>
+
+          <div class="prefs">
+            <label class="toggle">
+              <input type="checkbox" checked>
+              <span class="toggle-ui" aria-hidden="true"></span>
+              <span class="toggle-text">
+                <strong>Notifications email</strong>
+                <span class="muted">Recevoir un récap hebdomadaire</span>
+              </span>
+            </label>
+
+            <label class="toggle">
+              <input type="checkbox">
+              <span class="toggle-ui" aria-hidden="true"></span>
+              <span class="toggle-text">
+                <strong>Mode focus</strong>
+                <span class="muted">Masquer les éléments non essentiels</span>
+              </span>
+            </label>
+
+            <label class="toggle">
+              <input type="checkbox" checked>
+              <span class="toggle-ui" aria-hidden="true"></span>
+              <span class="toggle-text">
+                <strong>Rappels de progression</strong>
+                <span class="muted">Petits rappels quand tu décroches</span>
+              </span>
+            </label>
+          </div>
+        </section>
+
+        <!-- SECURITE -->
+        <section id="securite" class="panel">
+          <div class="panel-head">
+            <h3>Sécurité</h3>
+            <span class="muted">Mot de passe & connexion</span>
+          </div>
+
+          <div class="security-grid">
+            <div class="security-card">
+              <h4>Changer le mot de passe</h4>
+              <p class="muted">Utilise un mot de passe long (12+), unique.</p>
+              <button class="btn btn-primary" type="button">Mettre à jour</button>
+            </div>
+
+            <div class="security-card">
+              <h4>Sessions actives</h4>
+              <p class="muted">Déconnecte-toi des appareils inconnus.</p>
+              <button class="btn btn-ghost" type="button">Voir les sessions</button>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2026 — ESTIA Learning</p>
+      <p class="muted">Plateforme d’apprentissage — Prototype UI</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
